@@ -1,6 +1,7 @@
 import Appointment from "./sections/Appointment";
 import CustomerReview from "./sections/CustomerReview";
 import Experience from "./sections/Experience";
+import ExtraServices from "./sections/ExtraService";
 import Features from "./sections/Features";
 import HeroSection from "./sections/HeroSection";
 import PortFolio from "./sections/PortFolio";
@@ -15,6 +16,7 @@ export default function Home() {
       <Services />
       <CustomerReview />
       <Features />
+      <ExtraServices />
       <Appointment />
     </main>
   );
