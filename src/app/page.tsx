@@ -1,4 +1,6 @@
+import CustomerReview from "./sections/CustomerReview";
 import Experience from "./sections/Experience";
+import Features from "./sections/Features";
 import HeroSection from "./sections/HeroSection";
 import PortFolio from "./sections/PortFolio";
 import Services from "./sections/Services";
@@ -10,6 +12,8 @@ export default function Home() {
       <PortFolio />
       <Experience />
       <Services />
+      <CustomerReview />
+      <Features />
     </main>
   );
 }
