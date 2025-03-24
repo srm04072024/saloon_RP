@@ -5,6 +5,7 @@
   --foreground: #ffffff;
   --brandcolor: #91765a;
   --customwhite: #f5eee7;
+  --customblack: #14100c;
   --check: "#";
 }
 
@@ -12,6 +13,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-brandcolor: var(--brandcolor);
+  --color-customblack: var(--customblack);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-customwhite: var(--customwhite);

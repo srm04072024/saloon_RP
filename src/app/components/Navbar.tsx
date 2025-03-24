@@ -21,10 +21,10 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="z-50">
+    <header className="">
       <nav
         className={`fixed mx-auto w-full top-0 left-0 transition-all duration-300 h-[17vh] z-50
-      ${scrolled ? "bg-black shadow-md" : "bg-transparent"}`}
+      ${scrolled ? "bg-customblack shadow-md" : "bg-transparent"}`}
       >
         <div className="container flex justify-between items-center mx-auto h-full">
           <Link href="#" className="text-white font-semibold uppercase text-sm">
