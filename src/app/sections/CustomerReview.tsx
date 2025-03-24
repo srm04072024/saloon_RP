@@ -1,7 +1,8 @@
 export default function CustomerReview() {
   return (
-    <section className="w-screen h-screen bg-[url('/customer_reviews2.jpg')] bg-fixed bg-center bg-cover bg-no-repeat flex justify-center">
-      <div className=" h-full min-w-[500px] w-1/2 flex flex-col justify-center items-center gap-6">
+    <section className="w-screen h-screen bg-[url('/customer_reviews2.jpg')] bg-fixed bg-center bg-cover bg-no-repeat flex justify-center relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/70 to-black/60"></div>
+      <div className="absolute inset-0 h-full min-w-[500px] w-1/2 flex flex-col justify-center items-center gap-6 mx-auto">
         <div>
           <span>&#x2B50;</span>
           <span>&#x2B50;</span>
