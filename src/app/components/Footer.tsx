@@ -1,4 +1,3 @@
-import { timingSafeEqual } from "crypto";
 import Link from "next/link";
 
 const timing = [
@@ -14,13 +13,14 @@ const timing = [
 export default function Footer() {
   return (
     <footer className="  bg-customblack   text-neutral-400">
-      <div className="grid grid-cols-9  gap-10 py-25 px-10">
+      <div className="grid grid-cols-9  gap-15 py-25 px-12">
         {/* Contact */}
         <div className="col-span-9 md:col-span-3">
+          <h2 className="text-2xl font-bold mb-4 text-white">Contact</h2>
           <div className="h-full w-full flex flex-col gap-4">
-            <h2 className="text-2xl font-bold mb-4 text-white">Contact</h2>
             <p className=" capitalize leading-8">
-              Gopabandhu Chakka, Jajpur road, Jajpur, 755019 <br />
+              Gopabandhu Chakka, Jajpur road,
+              <br /> Jajpur, 755019 <br />
               India
             </p>
 
@@ -61,7 +61,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="border-t-[1px] capitalize text-sm italic p-8">
+      <div className="border-t-[1px] capitalize text-sm italic py-8 px-15">
         2025 &copy; All rights reserved.
       </div>
     </footer>
