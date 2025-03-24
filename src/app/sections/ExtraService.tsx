@@ -1,4 +1,3 @@
-import { Meow_Script } from "next/font/google";
 import Link from "next/link";
 
 const moreServices = [

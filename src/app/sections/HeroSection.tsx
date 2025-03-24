@@ -3,7 +3,7 @@ import Bouncer from "../components/Bouncer";
 export default function HeroSection() {
   return (
     <div className="h-[screen] w-screen bg-[url('/hero.jpg')] bg-fixed bg-no-repeat bg-cover bg-center py-4">
-      <div className="h-[100vh] flex flex-col justify-center items-center gap-5">
+      <div className="h-[100vh] flex flex-col justify-center items-center gap-4">
         <h4 className="text-sm font-semibold uppercase text-white">
           Stay sharp, Look good
         </h4>

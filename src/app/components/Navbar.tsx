@@ -1,9 +1,13 @@
 "use client"; // If using Next.js App Router
+import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,7 +17,7 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navigation = [
+  const navigations = [
     { href: "/", title: "Home" },
     { href: "/about", title: "About" },
     { href: "/services", title: "Services" },
@@ -21,28 +25,63 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="">
+    <header className="w-screen">
       <nav
-        className={`fixed mx-auto w-full top-0 left-0 transition-all duration-300 h-[17vh] z-50
+        className={`max-sm:bg-customblack fixed mx-auto w-full top-0 left-0 transition-all duration-300 h-[17vh] z-50
       ${scrolled ? "bg-customblack shadow-md" : "bg-transparent"}`}
       >
-        <div className="container flex justify-between items-center mx-auto h-full">
-          <Link href="#" className="text-white font-semibold uppercase text-sm">
-            Brand
+        <div className="container flex justify-between items-center mx-auto h-full px-10 sm:px-0">
+          <Link href="/" className="text-white font-semibold uppercase text-sm">
+            <div className="h-[17vh] w-[10vw] relative">
+              <Image
+                src="/logo.png"
+                alt="logoimg"
+                fill
+                className="object-cover"
+              />
+            </div>
           </Link>
-          <ul className="hidden md:flex space-x-8 p-4">
-            {navigation.map((nav) => {
-              return (
-                <li
-                  key={nav.title}
-                  className="text-white font-semibold uppercase text-sm"
-                >
-                  <Link href={nav.href}>{nav.title}</Link>
-                </li>
-              );
-            })}
-          </ul>
+          <div>
+            <button
+              onClick={() => setIsMobile((prev) => !prev)}
+              className={`text-brandcolor px-6 py-1 border-1 rounded-xs border-brandcolor sm:hidden `}
+            >
+              {isMobile ? "X" : <kbd>&#9776;</kbd>}
+            </button>
+            <ul className="hidden sm:flex space-x-8 p-4">
+              {navigations.map((nav) => {
+                return (
+                  <li
+                    key={nav.title}
+                    className={` font-semibold uppercase text-sm ${
+                      pathname === nav.href ? "text-brandcolor" : "text-white"
+                    }`}
+                  >
+                    <Link href={nav.href}>{nav.title}</Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
+        {isMobile ? (
+          <div className="bg-customblack">
+            <ul className="flex flex-col sm:hidden p-4 ml-6">
+              {navigations.map((nav) => {
+                return (
+                  <li
+                    className={` text-sm font-bold my-4 ${
+                      pathname == nav.href ? "text-brandcolor" : "text-white"
+                    }`}
+                    key={nav.title}
+                  >
+                    <Link href={nav.href}>{nav.title}</Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        ) : null}
       </nav>
     </header>
   );
