@@ -1,4 +1,5 @@
 import Appointment from "./sections/Appointment";
+import BarbersSection from "./sections/BarbersSection";
 import CustomerReview from "./sections/CustomerReview";
 import Experience from "./sections/Experience";
 import ExtraServices from "./sections/ExtraService";
@@ -18,6 +19,7 @@ export default function Home() {
       <CustomerReview />
       <Features />
       <PromoVideo />
+      <BarbersSection />
       <ExtraServices />
       <Appointment />
     </main>
