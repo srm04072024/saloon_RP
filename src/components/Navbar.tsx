@@ -18,8 +18,8 @@ export default function Navbar() {
 
   const navigations = [
     { href: "/", title: "Home" },
-    { href: "/about", title: "About" },
-    { href: "/services", title: "Services" },
+    { href: "/#about", title: "About" },
+    { href: "/#services", title: "Services" },
     { href: "/#footer", title: "Contact" },
   ];
 
@@ -56,7 +56,9 @@ export default function Navbar() {
                       pathname === nav.href ? "text-brandcolor" : "text-white"
                     }`}
                   >
-                    <Link href={nav.href}>{nav.title}</Link>
+                    <Link href={nav.href} target="_self">
+                      {nav.title}
+                    </Link>
                   </li>
                 );
               })}
@@ -74,7 +76,9 @@ export default function Navbar() {
                     }`}
                     key={nav.title}
                   >
-                    <Link href={nav.href}>{nav.title}</Link>
+                    <Link href={nav.href} scroll={false}>
+                      {nav.title}
+                    </Link>
                   </li>
                 );
               })}

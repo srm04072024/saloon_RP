@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function PortFolio() {
   return (
-    <section className="bg-[#f5eee7] px-10 md:px-20 py-28 flex flex-col gap-40 text-gray-500 text-sm leading-7">
+    <section
+      className="bg-[#f5eee7] px-10 md:px-20 py-28 flex flex-col gap-40 text-gray-500 text-sm leading-7"
+      id="about"
+    >
       <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1  gap-10">
         <div className="flex flex-col gap-4">
           <h4>since 2025</h4>
