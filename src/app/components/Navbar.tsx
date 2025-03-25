@@ -8,7 +8,6 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const pathname = usePathname();
-
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 30);
@@ -21,7 +20,7 @@ export default function Navbar() {
     { href: "/", title: "Home" },
     { href: "/about", title: "About" },
     { href: "/services", title: "Services" },
-    { href: "/contact", title: "Contact" },
+    { href: "/#footer", title: "Contact" },
   ];
 
   return (

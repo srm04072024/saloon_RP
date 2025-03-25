@@ -24,7 +24,7 @@ export default function PortFolio() {
             <li>We use quality products to make you look perfect</li>
           </ul>
         </div>
-        <div className="grid grid-cols-2 gap-5 md:gap-20">
+        <div className="grid grid-cols-2 gap-5 md:gap-5 lg:gap-15">
           <div className="relative">
             <div className="h-3/4 w-full absolute bottom-0">
               <Image src={"/hair_cut_1.jpg"} alt="hairstyle_1" fill />

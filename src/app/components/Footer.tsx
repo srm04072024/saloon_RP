@@ -12,7 +12,7 @@ const timing = [
 
 export default function Footer() {
   return (
-    <footer className="w-screen bg-customblack text-neutral-400 ">
+    <footer className="w-screen bg-customblack text-neutral-400 " id="footer">
       <div className="grid grid-cols-3  gap-15 py-25 px-10">
         {/* Contact */}
         <div className="col-span-3 md:col-span-1">
