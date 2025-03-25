@@ -15,7 +15,7 @@ export default function Navbar() {
     console.log(pathname);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  });
 
   const navigations = [
     { href: "/", title: "Home" },
@@ -32,12 +32,12 @@ export default function Navbar() {
       >
         <div className=" flex justify-between items-center mx-auto sm:px-10 px-5">
           <Link href="/" className="text-white font-semibold uppercase text-sm">
-            <div className="h-[17vh] w-[10vw] relative">
+            <div className="h-[17vh] w-[30vw] relative">
               <Image
                 src="/logo.png"
                 alt="logoimg"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           </Link>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Experience() {
   return (
-    <section className="grid grid-cols-12 gap-6 p-20 ">
+    <section className="grid grid-cols-12 gap-6 p-5 md:p-20">
       <div className="col-span-12 md:col-span-5 relative h-screen">
         <Image
           src="/experience.jpg"
@@ -13,7 +13,7 @@ export default function Experience() {
       </div>
       <div className="col-span-12 md:col-span-7">
         <div className="h-full flex flex-col justify-center gap-8">
-          <h4>17 year of experience</h4>
+          <h4>1 year of experience</h4>
           <h1 className="text-white text-2xl md:text-5xl font-bold flex flex-wrap leading-8 md:leading-16">
             Making people look awesome since 2006
           </h1>

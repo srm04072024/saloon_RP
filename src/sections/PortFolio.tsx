@@ -9,7 +9,7 @@ export default function PortFolio() {
       <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1  gap-10">
         <div className="flex flex-col gap-4">
           <h4>since 2025</h4>
-          <h1 className="text-5xl text-black font-bold">Perukar Barber Shop</h1>
+          <h1 className="text-5xl text-black font-bold">Raaz Premium</h1>
           <p className="">
             Come experience a unique and edgy barbershop for all your hair and
             beard needs. ravida haretra nuam enim mi obortis eset uctus enec

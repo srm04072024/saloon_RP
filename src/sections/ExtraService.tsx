@@ -41,7 +41,10 @@ const moreServices = [
 
 export default function ExtraServices() {
   return (
-    <section className="bg-customwhite  w-full text-center p-15" id="services">
+    <section
+      className="bg-customwhite  w-full text-center p-10 md:p-15"
+      id="services"
+    >
       <h4 className="mb-4">Our Services</h4>
       <h1 className="capitalize mb-4 text-2xl md:text-5xl text-black font-bold">
         We Also Offer
