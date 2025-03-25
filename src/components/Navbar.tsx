@@ -76,7 +76,7 @@ export default function Navbar() {
                     }`}
                     key={nav.title}
                   >
-                    <Link href={nav.href} scroll={false}>
+                    <Link href={nav.href} target="_self">
                       {nav.title}
                     </Link>
                   </li>
