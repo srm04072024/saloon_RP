@@ -44,6 +44,15 @@
     list-style-type: var(--check);
   }
 }
+@layer component {
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 30px solid white; /* Triangle color */
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+  }
+}
 
 body {
   background: var(--background);

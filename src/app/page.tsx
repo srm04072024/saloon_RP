@@ -5,6 +5,7 @@ import ExtraServices from "./sections/ExtraService";
 import Features from "./sections/Features";
 import HeroSection from "./sections/HeroSection";
 import PortFolio from "./sections/PortFolio";
+import PromoVideo from "./sections/PromoVideo";
 import Services from "./sections/Services";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Services />
       <CustomerReview />
       <Features />
+      <PromoVideo />
       <ExtraServices />
       <Appointment />
     </main>
