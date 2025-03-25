@@ -32,7 +32,7 @@ export default function Navbar() {
       >
         <div className=" flex justify-between items-center mx-auto sm:px-10 px-5">
           <Link href="/" className="text-white font-semibold uppercase text-sm">
-            <div className="h-[17vh] w-[30vw] relative">
+            <div className="h-[17vh] w-[20vw] relative">
               <Image
                 src="/logo.png"
                 alt="logoimg"
@@ -41,7 +41,7 @@ export default function Navbar() {
               />
             </div>
           </Link>
-          <div>
+          <div className="pr-6">
             <button
               onClick={() => setIsMobile((prev) => !prev)}
               className={`text-brandcolor px-6 py-1 border-1 rounded-xs border-brandcolor sm:hidden `}
