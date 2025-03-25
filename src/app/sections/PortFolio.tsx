@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function PortFolio() {
   return (
-    <section className="bg-[#f5eee7] px-28 md:px-20 py-28 flex flex-col gap-40 text-gray-500 text-sm leading-7">
+    <section className="bg-[#f5eee7] px-10 md:px-20 py-28 flex flex-col gap-40 text-gray-500 text-sm leading-7">
       <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1  gap-10">
         <div className="flex flex-col gap-4">
           <h4>since 2025</h4>
@@ -24,7 +24,7 @@ export default function PortFolio() {
             <li>We use quality products to make you look perfect</li>
           </ul>
         </div>
-        <div className="grid grid-cols-2 gap-20">
+        <div className="grid grid-cols-2 gap-5 md:gap-20">
           <div className="relative">
             <div className="h-3/4 w-full absolute bottom-0">
               <Image src={"/hair_cut_1.jpg"} alt="hairstyle_1" fill />

@@ -12,15 +12,14 @@ const timing = [
 
 export default function Footer() {
   return (
-    <footer className="  bg-customblack   text-neutral-400">
-      <div className="grid grid-cols-9  gap-15 py-25 px-12">
+    <footer className="w-screen bg-customblack text-neutral-400 ">
+      <div className="grid grid-cols-3  gap-15 py-25 px-10">
         {/* Contact */}
-        <div className="col-span-9 md:col-span-3">
+        <div className="col-span-3 md:col-span-1">
           <h2 className="text-2xl font-bold mb-4 text-white">Contact</h2>
           <div className="h-full w-full flex flex-col gap-4">
             <p className=" capitalize leading-8">
-              Gopabandhu Chakka, Jajpur road,
-              <br /> Jajpur, 755019 <br />
+              Gopabandhu Chakka, Jajpur road, Jajpur, 755019 <br />
               India
             </p>
 
@@ -32,20 +31,22 @@ export default function Footer() {
           </div>
         </div>
         {/* Time */}
-        <div className="col-span-9 md:col-span-3">
-          <h2 className="text-2xl font-bold text-white">Work Time</h2>
-          <ul className="">
-            {timing.map((ele) => (
-              <li key={ele.day} className="flex my-4 tracking-widest text-xs">
-                <div className="">{ele.day}</div>
-                <div className="grow border-dotted border-b-1 border-neutral-700 m-2"></div>
-                <div className="">{ele.time}</div>
-              </li>
-            ))}
-          </ul>
+        <div className="col-span-3 md:col-span-1">
+          <div className="h-full w-full">
+            <h2 className="text-2xl font-bold text-white">Work Time</h2>
+            <ul className="">
+              {timing.map((ele) => (
+                <li key={ele.day} className="flex my-4 tracking-widest text-xs">
+                  <div className="">{ele.day}</div>
+                  <div className="grow border-dotted border-b-1 border-neutral-700 m-2 "></div>
+                  <div className="">{ele.time}</div>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
         {/* subscribe */}
-        <div className="col-span-9 md:col-span-3  p-2">
+        <div className="col-span-3 md:col-span-1  p-2">
           <h2 className="text-2xl font-bold mb-4 text-white">Subscribe</h2>
           <div className="w-full border-1 border-brandcolor h-14 relative">
             <input

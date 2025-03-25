@@ -2,8 +2,9 @@ import Bouncer from "../components/Bouncer";
 
 export default function HeroSection() {
   return (
-    <div className="h-[screen] w-screen bg-[url('/hero.jpg')] bg-fixed bg-no-repeat bg-cover bg-center py-4">
-      <div className="h-[100vh] flex flex-col justify-center items-center gap-4">
+    <div className="h-screen w-screen bg-[url('/hero.jpg')] bg-fixed bg-no-repeat bg-cover bg-center py-4 relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/20"></div>
+      <div className="h-[100vh] absolute inset-0 flex flex-col justify-center items-center gap-4">
         <h4 className="text-sm font-semibold uppercase text-white">
           Stay sharp, Look good
         </h4>

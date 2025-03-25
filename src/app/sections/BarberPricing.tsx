@@ -52,7 +52,7 @@ const priceList = [
 
 export default function BarberPricing() {
   return (
-    <section className=" w-screen text-sm bg-customwhite p-20">
+    <section className=" w-full text-sm bg-customwhite p-20">
       <div className="grid grid-cols-2 gap-8">
         <div className="col-span-2 text-center">
           <h4> pricing plan</h4>
@@ -66,10 +66,10 @@ export default function BarberPricing() {
               <div className="text-black text-lg font-extrabold">
                 {list.service}
               </div>
-              <div className="grow border-dotted border-b-1 border-neutral-700 m-2"></div>
+              <div className="grow border-dotted border-b-1 border-neutral-700 mb-4 mx-1"></div>
               <div className="text-2xl text-brandcolor font-bold">{`$${list.price}`}</div>
             </div>
-            <p className="italic text-neutral-600">{list.details}</p>
+            <p className="italic text-neutral-600 mt-2">{list.details}</p>
           </div>
         ))}
       </div>

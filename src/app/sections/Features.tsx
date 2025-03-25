@@ -26,7 +26,7 @@ const serviceDetails = [
 
 export default function Features() {
   return (
-    <section className=" w-screen relative overflow-hidden">
+    <section className=" w-full relative overflow-hidden">
       {/* <div className="h-2/3 w-full bg-black"></div>
       <div className="h-1/3 w-full bg-customwhite"></div> */}
       <div className="h-full w-full text-center py-25 px-10">

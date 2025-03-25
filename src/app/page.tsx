@@ -12,7 +12,7 @@ import Services from "./sections/Services";
 
 export default function Home() {
   return (
-    <main>
+    <main className="w-screen">
       <HeroSection />
       <PortFolio />
       <Experience />

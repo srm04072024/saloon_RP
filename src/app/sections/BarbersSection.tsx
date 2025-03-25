@@ -25,7 +25,7 @@ const serviceDetails = [
 ];
 export default function BarbersSection() {
   return (
-    <section className="px-10 bg-customwhite py-20">
+    <section className="h-full w-full px-10 bg-customwhite py-20">
       <div className="text-center my-8">
         <h4 className="mb-4 uppercase">Our Barbers</h4>
         <h1 className="text-2xl font-semibold md:text-5xl text-black">

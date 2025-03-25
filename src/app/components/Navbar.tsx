@@ -27,10 +27,10 @@ export default function Navbar() {
   return (
     <header className="w-screen">
       <nav
-        className={`max-sm:bg-customblack fixed mx-auto w-full top-0 left-0 transition-all duration-300 h-[17vh] z-50
+        className={`w-full h-[17vh] max-sm:bg-customblack fixed top-0 left-0 transition-all duration-300 z-50 
       ${scrolled ? "bg-customblack shadow-md" : "bg-transparent"}`}
       >
-        <div className="container flex justify-between items-center mx-auto h-full px-10 sm:px-0">
+        <div className=" flex justify-between items-center mx-auto sm:px-10 px-5">
           <Link href="/" className="text-white font-semibold uppercase text-sm">
             <div className="h-[17vh] w-[10vw] relative">
               <Image
