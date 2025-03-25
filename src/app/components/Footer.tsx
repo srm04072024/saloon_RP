@@ -38,7 +38,7 @@ export default function Footer() {
             {timing.map((ele) => (
               <li key={ele.day} className="flex my-4 tracking-widest text-xs">
                 <div className="">{ele.day}</div>
-                <div className="grow border-dotted border-b-1 border-neutral-700"></div>
+                <div className="grow border-dotted border-b-1 border-neutral-700 m-2"></div>
                 <div className="">{ele.time}</div>
               </li>
             ))}
