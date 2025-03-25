@@ -1,4 +1,4 @@
-import Bouncer from "../components/Bouncer";
+import Bouncer from "@/components/Bouncer";
 
 export default function HeroSection() {
   return (

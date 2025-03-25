@@ -1,4 +1,4 @@
-import InfoCardService from "../components/InfoCardService";
+import InfoCardService from "@/components/InfoCardService";
 
 const serviceDetails = [
   {

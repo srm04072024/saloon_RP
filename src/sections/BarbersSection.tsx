@@ -1,4 +1,4 @@
-import BarberDetails from "../components/BarberDetails";
+import BarberDetails from "@/components/BarberDetails";
 
 const serviceDetails = [
   {
